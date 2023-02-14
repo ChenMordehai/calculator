@@ -3,27 +3,18 @@
 }
 
 .App-logo {
-  /* height: 40vmin; */
   pointer-events: none;
   border-radius: 5px;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
 
 .App-header {
   background-color: white;
-  /* background-image: url("https://t4.ftcdn.net/jpg/02/53/95/55/360_F_253955559_X3GRCQXhhgxrsupqG8kfpclFpY7Deih2.jpg"); */
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  /* color: white; */
 }
 
 
@@ -48,7 +39,6 @@
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
-    /* background-color: white; */
   }
 .calculator-grid {
   display: grid;
@@ -62,7 +52,6 @@
 .calculator-grid > button {
   cursor: pointer;
   font-size: 2rem;
-  /* border: 1px, solid #f6f2f2; */
   border: 2px solid black;
   border-radius: 5px;
   outline: none;

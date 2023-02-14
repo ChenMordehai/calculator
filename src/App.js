@@ -6,36 +6,27 @@ import React, { useState } from 'react';
 
 function App() {
 
-  // values
+
   const [previousOperand, setPreviousOperand] = useState('');
   const [currentOperand, setCurrentOperand] = useState('');
   const [operation, setOperation] = useState('');
 
 
-  // handle number button click
+
   const handleNumberClick = num => {
     // check if currentOperand has more then 1 dot
     if (currentOperand.includes('.') && num ==='.'){
       window.alert("Oops! please enter a valid number");
       return;
     }
-    // update currentOperand
     setCurrentOperand(currentOperand+num);
   };
 
   const handleOperationClick = op =>{
-    console.log(currentOperand);
-    console.log(previousOperand);
     if (currentOperand ===''){
       return;
     }
-    // if (previousOperand !== ''){
-    //   console.log("inside if");
-    //   handleCalc();
-    // }
     setOperation(op);
-    console.log(op);
-    console.log(currentOperand);
     setPreviousOperand(currentOperand);
     setCurrentOperand('');
   };
@@ -50,7 +41,6 @@ function App() {
       return;
     }
     let ans;
-    console.log(previousOperand,operation,currentOperand);
     switch(operation){
       case '/':
         if (num_curr === 0.0){
@@ -88,7 +78,6 @@ function App() {
   };
 
   const handleKeyPress = event => {
-    //console.log(event.key);
     if (event.key >= '0' && event.key <= '9') {
       handleNumberClick(event.key);
     } 
