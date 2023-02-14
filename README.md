@@ -1,4 +1,4 @@
-![Chen's Calculator](./logo.jpg "Chen's Calculator")
+![Chen's Calculator](src/logo.jpg "Chen's Calculator")
 
 #### This is a web-based calculator application that can perform basic mathematical operations such as:
 * addition
